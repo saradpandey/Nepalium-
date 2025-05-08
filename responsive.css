@@ -87,4 +87,14 @@
         width: 100%;
       }
     }
-    
+     /* responsive tweaks */
+  @media (max-width: 1200px) {
+    .customSwiper .custom-slide { width: 45%; }
+  }
+  @media (max-width: 768px) {
+    .customSwiper .custom-slide { width: 80%; }
+    .customSwiper .card-body { opacity: 1; transform: translateY(0); }
+  }
+  @media (max-width: 576px) {
+    .customSwiper .custom-slide { width: 100%; }
+  }
