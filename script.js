@@ -14,16 +14,16 @@
 
   // Custom product slider data
   const customProducts = [
-    { name: 'Tomato', price: 40, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 4 },
-    { name: 'Cucumber', price: 50, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 5 },
-    { name: 'Carrot', price: 60, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 3 },
-    { name: 'Potato', price: 30, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 4 },
-    { name: 'Apple', price: 120, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 4 },
-    { name: 'Banana', price: 80, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 3 },
-    { name: 'Mango', price: 150, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 5 },
-    { name: 'Onion', price: 35, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 4 },
-    { name: 'Eggplant', price: 70, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 2 },
-    { name: 'Cauliflower', price: 90, img: 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=400&q=80', reviews: 4 }
+    { name: 'Tomato', price: 40, img: 'https://www.almanac.com/sites/default/files/users/The%20Editors/tomatoes_ozgurdonmaz_gettyimages-edit_full_width.jpeg', reviews: 4 },
+    { name: 'Cucumber', price: 50, img: 'https://www.shutterstock.com/image-photo/organic-cucumbers-cultivation-closeup-fresh-600nw-2463149627.jpg', reviews: 5 },
+    { name: 'Carrot', price: 60, img: 'https://images.unsplash.com/photo-1633380110125-f6e685676160?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnJvdHxlbnwwfHwwfHx8MA%3D%3D', reviews: 3 },
+    { name: 'Potato', price: 30, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWt2bG1fRw0fFxQLM39GoCH0hkXfVO9uA2w&s', reviews: 4 },
+    { name: 'Apple', price: 120, img: 'https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2019%2F06%2F19132041%2FHow-the-apple-became-such-a-ubiquitous-iconic-fruit-across-the-globe-1400x850.jpg&w=1200&q=75', reviews: 4 },
+    { name: 'Banana', price: 80, img: 'https://thumbs.dreamstime.com/b/banana-bunch-hanging-palm-tree-ai-generative-design-background-instagram-facebook-wall-painting-art-backgrounds-wallpaper-325270238.jpg', reviews: 3 },
+    { name: 'Mango', price: 150, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2tmzH9WS5HbdC5j-sEBuEe5S6Nar9OEDwQ&s', reviews: 5 },
+    { name: 'Onion', price: 35, img: 'https://t3.ftcdn.net/jpg/09/54/54/88/360_F_954548899_M6D9TLhN9G1FkwUHEX78NAUp33LRImdf.jpg', reviews: 4 },
+    { name: 'Eggplant', price: 70, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJiWmeeYXAs4OPqkG-wOHBdURQhpP9Uw42Tg&s', reviews: 2 },
+    { name: 'Cauliflower', price: 90, img: 'https://www.epicgardening.com/wp-content/uploads/2023/09/Types-of-Cauliflower.jpg', reviews: 4 }
   ];
 
   function renderCustomSlider(data = customProducts) {
@@ -86,18 +86,18 @@
   // Products for vegetables and fruits section
   const products = {
     "vegetables-fruits-list": [
-      { name: 'Tomato', price: 40, img: 'https://source.unsplash.com/200x200/?tomato' },
-      { name: 'Carrot', price: 60, img: 'https://source.unsplash.com/200x200/?carrot' },
-      { name: 'Potato', price: 30, img: 'https://source.unsplash.com/200x200/?potato' },
-      { name: 'Apple', price: 120, img: 'https://source.unsplash.com/200x200/?apple' },
-      { name: 'Banana', price: 80, img: 'https://source.unsplash.com/200x200/?banana' },
-      { name: 'Cucumber', price: 50, img: 'https://source.unsplash.com/200x200/?cucumber' },
-      { name: 'Mango', price: 150, img: 'https://source.unsplash.com/200x200/?mango' },
-      { name: 'Orange', price: 100, img: 'https://source.unsplash.com/200x200/?orange' },
-      { name: 'Onion', price: 70, img: 'https://source.unsplash.com/200x200/?onion' },
-      { name: 'Pineapple', price: 130, img: 'https://source.unsplash.com/200x200/?pineapple' },
-      { name: 'Spinach', price: 45, img: 'https://source.unsplash.com/200x200/?spinach' },
-      { name: 'Broccoli', price: 90, img: 'https://source.unsplash.com/200x200/?broccoli' }
+      { name: 'Tomato', price: 40, img: 'https://www.almanac.com/sites/default/files/users/The%20Editors/tomatoes_ozgurdonmaz_gettyimages-edit_full_width.jpeg' },
+      { name: 'Carrot', price: 60, img: 'https://images.unsplash.com/photo-1633380110125-f6e685676160?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnJvdHxlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Potato', price: 30, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWt2bG1fRw0fFxQLM39GoCH0hkXfVO9uA2w&s' },
+      { name: 'Apple', price: 120, img: 'https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2019%2F06%2F19132041%2FHow-the-apple-became-such-a-ubiquitous-iconic-fruit-across-the-globe-1400x850.jpg&w=1200&q=75' },
+      { name: 'Banana', price: 80, img: 'https://thumbs.dreamstime.com/b/banana-bunch-hanging-palm-tree-ai-generative-design-background-instagram-facebook-wall-painting-art-backgrounds-wallpaper-325270238.jpg' },
+      { name: 'Cucumber', price: 50, img: 'https://www.shutterstock.com/image-photo/organic-cucumbers-cultivation-closeup-fresh-600nw-2463149627.jpg' },
+      { name: 'Mango', price: 150, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2tmzH9WS5HbdC5j-sEBuEe5S6Nar9OEDwQ&s' },
+      { name: 'Orange', price: 100, img: 'https://t3.ftcdn.net/jpg/04/86/61/74/360_F_486617409_HfTkXKIMRNdayEqPKwSzUajDcpayW0mJ.jpg' },
+      { name: 'Onion', price: 70, img: 'https://t3.ftcdn.net/jpg/09/54/54/88/360_F_954548899_M6D9TLhN9G1FkwUHEX78NAUp33LRImdf.jpg' },
+      { name: 'Pineapple', price: 130, img: 'https://cdn.mos.cms.futurecdn.net/D2buHfHJAu9EmxPbEcmUT5.jpg' },
+      { name: 'Spinach', price: 45, img: 'https://www.trustbasket.com/cdn/shop/articles/Spinach.webp?v=1686909241' },
+      { name: 'Broccoli', price: 90, img: 'https://images.everydayhealth.com/images/diet-nutrition/all-about-broccoli-nutrition-facts-health-benefits-uses-and-more-722x406.jpg?w=508' }
     ]
   };
 
