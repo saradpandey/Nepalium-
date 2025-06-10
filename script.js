@@ -2,6 +2,10 @@
   // Swiper init for hero slider
   const swiper = new Swiper('.mySwiper', {
     loop: true,
+    autoplay: {
+    delay: 3000, // Auto slide every 3 seconds
+    disableOnInteraction: false // Keeps autoplay running even after user interaction
+  },
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -11,6 +15,8 @@
       prevEl: '.swiper-button-prev',
     },
   });
+
+
 
   // Custom product slider data
   const customProducts = [
@@ -49,20 +55,25 @@
       wrapper.appendChild(slide);
     });
 
-    new Swiper('.customSwiper', {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-        prevEl: '.custom-prev',
-        nextEl: '.custom-next'
-      },
-      breakpoints: {
-        1200: { slidesPerView: 4 },
-        768: { slidesPerView: 2 },
-        576: { slidesPerView: 1 }
-      }
-    });
+   new Swiper('.customSwiper', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 1000, // Auto slide every 3 seconds
+    disableOnInteraction: false // Keeps autoplay running even after user interaction
+  },
+  navigation: {
+    prevEl: '.custom-prev',
+    nextEl: '.custom-next'
+  },
+  breakpoints: {
+    1200: { slidesPerView: 4 },
+    768: { slidesPerView: 2 },
+    576: { slidesPerView: 1 }
+  }
+});
+
 
     setTimeout(() => {
       document.querySelectorAll('.custom-slide').forEach(s => s.classList.add('show'));
