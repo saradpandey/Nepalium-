@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NEPALIUM</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Select Delivery Date</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
@@ -13,8 +11,23 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="responsive.css" />
-</head>
+  <style>
+   
 
+    .container {
+      max-width: 700px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .message-box {
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
 <body>
   <!-- Top Header -->
   <div class="top-header">
@@ -70,111 +83,32 @@
     </div>
     </a>
   </nav>
-  <!-- Swiper Slider -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img
-          src="https://thumbs.dreamstime.com/b/agriculture-vegetable-field-landscape-view-freshly-growing-84090367.jpg"
-          alt="">
-      </div>
-      <div class="swiper-slide">
-        <img
-          src="https://img.freepik.com/free-photo/green-tea-bud-leaves-green-tea-plantations-morning_335224-955.jpg?semt=ais_hybrid&w=740"
-          alt="">
-      </div>
-      <div class="swiper-slide">
-        <img src="https://cdn.pixabay.com/photo/2023/03/31/14/52/rice-field-7890204_640.jpg" alt="">
+<div class="container">
+  <h3 class="text-success text-center mb-4">📦 Select Your Delivery Date</h3>
+
+  <form id="deliveryForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">Customer Name</label>
+      <input type="text" class="form-control" id="name" required placeholder="Your name">
+    </div>
+
+    <div class="mb-3">
+      <label for="date" class="form-label">Delivery Date</label>
+      <input type="date" class="form-control" id="date" required>
+      <div id="dateMessage" class="alert alert-info mt-2 message-box">
+        You’ve selected your delivery date!
       </div>
     </div>
 
-    <!-- pagination dots -->
-    <div class="swiper-pagination"></div>
+    <button type="submit" class="btn btn-success w-100">Confirm Delivery</button>
+  </form>
 
-    <!-- add these for prev/next -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+  <div class="appointment-list mt-4">
+    <h5 class="text-primary">📋 Delivery Schedule:</h5>
+    <div id="appointmentsContainer"></div>
   </div>
+</div>
 
-  <!-- Welcome Section -->
-  <div class="welcome-Section">
-    <h2 class="welcome-title">Welcome to Empowering Nepali Farmers through E-commerce</h2>
-    <p class="welcome-text">
-      Namaste! We're thrilled to welcome you to Nepalium which is a digital space built with heart, purpose, and the
-      hardworking hands of Nepali farmers.
-      Our mission is to connect farmers directly with customers across Nepal, eliminating middlemen and ensuring fair
-      prices, fresh local produce, and a thriving agricultural community.
-      <br><br>
-      Here, every purchase tells a story, supports a family, and strengthens our economy.
-      Let’s build a better future for Nepali agriculture. <br> Explore. Connect. Empower.
-    </p>
-  </div>
-
-  <!-- Slider -->
-  <h2 class="our-products-categories">Our Popular Prducts</h2>
-  <div class="swiper customSwiper">
-    <div class="swiper-wrapper" id="custom-product-list"></div>
-  </div>
-
-
-
-  <h2 class="product">Our Products</h2>
-  <div class="our-products-container">
-    <div class="product-card"><a href="vegetables&fruits.html"><img class="image-main-products"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSFgaz0WrKXcPbxoHF9VdpPYQ6_4wrGTYluQ&s" alt="">
-        <h3 class="products-Name">Vegetables & Fruits</h3>
-      </a></div>
-    <div class="product-card"><a href="honey&Ghee.html"><img class="image-main-products"
-          src="https://static.toiimg.com/thumb/msid-113294596,width-400,resizemode-4/113294596.jpg" alt="">
-        <h3 class="products-Name">Honey & Ghee</h3>
-      </a></div>
-    <div class="product-card"><a href="Medicines&Herbs.html"><img class="image-main-products"
-          src="https://assets-api.kathmandupost.com/thumb.php?src=https://assets-cdn.kathmandupost.com/uploads/source/news/2018/others/page-16_1539745869.jpg&w=900&height=601"
-          alt="">
-        <h3 class="products-Name">Medicines & Herbs</h3>
-      </a></div>
-    <div class="product-card"><a href="Drinks&Beverages.html"><img class="image-main-products"
-          src="https://media.istockphoto.com/id/475273684/photo/bottles-and-glasses-of-assorted-alcoholic-beverages.jpg?s=612x612&w=0&k=20&c=oj5eX7jf04cz1h2r5FsBFznP4l6WhIt1jqXvdObWR0o="
-          alt="">
-        <h3 class="products-Name">Drinks & Beverages</h3>
-      </a></div>
-    <div class="product-card"><a href="Coffee&Tea.html"><img class="image-main-products"
-          src="https://www.shutterstock.com/image-photo/food-photography-green-tea-coffee-600nw-2195838791.jpg" alt="">
-        <h3 class="products-Name">Coffee & Tea</h3>
-      </a></div>
-    <div class="product-card"><a href="Meats&Sukuti.html"><img class="image-main-products"
-          src="https://media.istockphoto.com/id/694177316/photo/bbq-feast.jpg?s=612x612&w=0&k=20&c=8oU-S22JlBPTiHBBwZiJYs7fCJWiXjVI0VGWoTtlzXI="
-          alt="">
-        <h3 class="products-Name">Meats & Sukuti</h3>
-      </a></div>
-  </div>
-  <!-- Product Sections -->
-  <h3 class="products-name py-3">New Arrivals</h3>
-  <div class="container">
-    <div class="row" id="vegetables-fruits-list"></div>
-  </div>
-
-<!-- Top Feature Strip -->
-  <div class="top-feature-strip">
-    <div class="container feature-list">
-      <div class="feature-item">
-        <img class="images" src="https://www.digitalsahuji.com/public/assets/front-end/png/delivery.png" alt="Fast Delivery" class="feature-icon"/>
-        <p class="feature-text">Fast Delivery all<br>across the country</p>
-      </div>
-      <div class="feature-item">
-        <img class="images" src="https://www.digitalsahuji.com/public/assets/front-end/png/Payment.png" alt="Safe Payment" class="feature-icon" />
-        <p class="feature-text">Safe Payment</p>
-      </div>
-      <div class="feature-item">
-        <img class="images" src="https://www.digitalsahuji.com/public/assets/front-end/png/money.png" alt="Return Policy" class="feature-icon" />
-        <p class="feature-text">7 Days Return Policy</p>
-      </div>
-      <div class="feature-item">
-        <img class="images" src="https://www.digitalsahuji.com/public/assets/front-end/png/Genuine.png" alt="Authentic Products" class="feature-icon" />
-        <p class="feature-text">100% Authentic Products</p>
-      </div>
-    </div>
-  </div>
   <!-- Main Footer Section -->
   <footer class="footer">
     <div class="footer-grid">
@@ -231,8 +165,51 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-  
+<script>
+  const appointments = [];
+
+  document.getElementById('date').addEventListener('click', () => {
+    const msg = document.getElementById('dateMessage');
+    msg.style.display = 'block';
+  });
+
+  document.getElementById('deliveryForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const date = document.getElementById('date').value;
+
+    if (!name || !date) return;
+
+    appointments.push({ name, date });
+
+    // Sort by date
+    appointments.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    renderAppointments();
+
+    // Reset form and message
+    this.reset();
+    document.getElementById('dateMessage').style.display = 'none';
+  });
+
+  function renderAppointments() {
+    const container = document.getElementById('appointmentsContainer');
+    container.innerHTML = "";
+
+    if (appointments.length === 0) {
+      container.innerHTML = "<p class='text-muted'>No deliveries scheduled yet.</p>";
+      return;
+    }
+
+    appointments.forEach((appt, index) => {
+      const div = document.createElement('div');
+      div.className = 'appointment-item';
+      div.innerHTML = `<strong>${index + 1}. ${appt.name}</strong> — ${appt.date}`;
+      container.appendChild(div);
+    });
+  }
+</script>
 
 </body>
-
 </html>
