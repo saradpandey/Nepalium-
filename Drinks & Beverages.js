@@ -2,18 +2,17 @@
 const products = {
  
   "drinks-list": [
-  { name: 'Mango Juice', price: 150, img: 'https://source.unsplash.com/200x200/?juice' },
-  { name: 'Green Tea', price: 100, img: 'https://source.unsplash.com/200x200/?green-tea' },
-  { name: 'Lemon Water', price: 80, img: 'https://source.unsplash.com/200x200/?lemon-drink' },
-  { name: 'Coconut Water', price: 90, img: 'https://source.unsplash.com/200x200/?coconut-water' },
-  { name: 'Herbal Juice', price: 200, img: 'https://source.unsplash.com/200x200/?herbal-juice' },
-  { name: 'Energy Drink', price: 220, img: 'https://source.unsplash.com/200x200/?energy-drink' },
-  { name: 'Orange Juice', price: 140, img: 'https://source.unsplash.com/200x200/?orange-juice' },
-  { name: 'Soft Drink', price: 130, img: 'https://source.unsplash.com/200x200/?soft-drink' },
-  { name: 'Butter Milk', price: 70, img: 'https://source.unsplash.com/200x200/?buttermilk' },
-  { name: 'Hinwa Wine', price: 550, img: 'https://source.unsplash.com/200x200/?wine,bottle,nepal' },
-  { name: 'Dadaghare Wine', price: 600, img: 'https://source.unsplash.com/200x200/?red-wine,nepal' },
-  { name: 'Marpha Apple Wine', price: 650, img: 'https://source.unsplash.com/200x200/?apple-wine,bottle' }
+  { name: 'Mango Juice', price: 150, img: 'https://t3.ftcdn.net/jpg/01/87/65/02/360_F_187650225_yiZwjK4HjPVxlD8npzCRUuaoodF39Kby.jpg' },
+  
+  { name: 'Lemon Water', price: 80, img: 'https://igan.org/wp-content/uploads/2024/04/lemon-cucumber-water.jpeg' },
+  { name: 'Coconut Water', price: 90, img: 'https://rebel-kitchen.com/cdn/shop/files/coconut-water-750ml-lifestyle-1500x.jpg?v=1744030655&width=1445' },
+  { name: 'Herbal Juice', price: 200, img: 'https://img.drz.lazcdn.com/g/kf/Se56c7fd741bc48bdb4f7f0d3c4a56795G.jpg_720x720q80.jpg' },
+  { name: 'Orange Juice', price: 140, img: 'https://images.herzindagi.info/image/2020/Nov/orange-juice-for-health.jpg' },
+  { name: 'Soft Drink', price: 130, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1nmnmp8dbLE74xW5scabuI4MFOOpWUr3yrQ&s' },
+  { name: 'Butter Milk', price: 70, img: 'https://images.unsplash.com/photo-1630409346699-79481a79db52?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnV0dGVybWlsa3xlbnwwfHwwfHx8MA%3D%3D' },
+  { name: 'HinwButter Milka Wine', price: 550, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp754JpiM8GC-iVEZyhTgAjP74CvBGOu22hOooKC-zyNDy97ioeQMnPjTjfmAF2fQWIbk&usqp=CAU' },
+  { name: 'Dadaghare Wine', price: 600, img: 'https://nba-english-bucket.s3.ap-south-1.amazonaws.com/img/news/20160905042435_dada.jpg' },
+  { name: 'Marpha Apple Wine', price: 650, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4cRu5MJpdVfpZ46Bzxh0BAn_qic8gnhBbA&s' }
 ]
 
 

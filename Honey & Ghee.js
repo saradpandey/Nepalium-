@@ -1,18 +1,18 @@
 
 const products = {
  "honey-ghee-list": [
-  { name: 'Organic Honey', price: 500, img: 'https://source.unsplash.com/200x200/?honey' },
-  { name: 'Pure Ghee', price: 1200, img: 'https://source.unsplash.com/200x200/?ghee' },
-  { name: 'Wild Honey', price: 600, img: 'https://source.unsplash.com/200x200/?wild-honey' },
-  { name: 'Buff Ghee', price: 1300, img: 'https://source.unsplash.com/200x200/?buffalo-ghee' },
-  { name: 'Mustard Honey', price: 400, img: 'https://source.unsplash.com/200x200/?mustard-honey' },
+  { name: 'Organic Honey', price: 500, img: 'https://media.istockphoto.com/id/842769074/photo/sweet-honeycomb-and-wooden-honey-dripping.jpg?s=612x612&w=0&k=20&c=GJwPKmbX02jYByrjIWLOf8xTHWqQEy3vN6cYajM6p7o=' },
+  { name: 'Pure Ghee', price: 1200, img: 'https://t3.ftcdn.net/jpg/05/12/58/16/360_F_512581633_H87urnh8Os5lgvC3lsXTZMDClzrCGNpM.jpg' },
+  { name: 'Wild Honey', price: 600, img: 'https://media.istockphoto.com/id/532400492/photo/exposed-beehive.jpg?s=612x612&w=0&k=20&c=GD-nPzRlmTzBBZWHU7R1DUQ48e86v4JBNslvHYyNX1w=' },
+  { name: 'Buff Ghee', price: 1300, img: 'https://5.imimg.com/data5/IOS/Default/2023/10/354592066/DE/BP/DZ/23509044/product-jpeg-500x500.png' },
+  { name: 'Mustard Honey', price: 400, img: 'https://static.wixstatic.com/media/302bc4_1161ffac7eb1470ea722a3e30393a14e~mv2.jpg/v1/fill/w_480,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/302bc4_1161ffac7eb1470ea722a3e30393a14e~mv2.jpg' },
   { name: 'Flavored Honey', price: 550, img: 'https://source.unsplash.com/200x200/?flavored-honey' },
-  { name: 'Neem Honey', price: 580, img: 'https://source.unsplash.com/200x200/?neem-honey' },
-  { name: 'Mountain Honey', price: 620, img: 'https://source.unsplash.com/200x200/?mountain-honey' },
-  { name: 'Village Ghee', price: 1100, img: 'https://source.unsplash.com/200x200/?village-ghee' },
-  { name: 'Herbal Honey', price: 590, img: 'https://source.unsplash.com/200x200/?herbal-honey' },
-  { name: 'A2 Desi Ghee', price: 1400, img: 'https://source.unsplash.com/200x200/?desi-ghee' },
-  { name: 'Jamun Honey', price: 570, img: 'https://source.unsplash.com/200x200/?jamun-honey' }
+  { name: 'Neem Honey', price: 580, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYIJFth8eek5c4OGBEv8lnxZTsRaY2MqV_A&s' },
+  { name: 'Mountain Honey', price: 620, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6JAASWTCk-B-3uFEA8b2UjXCeyHfoCBwMw&s' },
+  { name: 'Village Ghee', price: 1100, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbm9LQ-WyppHgsl4bzoBcsXbJt6WB7IWlVw&s' },
+  { name: 'Herbal Honey', price: 590, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5zLVEDwt-jqfXUWSIgzo-x6GHnq-bRTmcQ&s' },
+  { name: 'A2 Desi Ghee', price: 1400, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqfelACnJbkSdLHBrJFiCbWgAGDF0SLwIcg&s' },
+  { name: 'Jamun Honey', price: 570, img: 'https://cdn.neosanjivani.com/wp-content/uploads/2022/06/4.jpg' }
 ]
 
 };

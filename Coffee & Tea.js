@@ -2,18 +2,18 @@
 const products = {
   
 "coffee-tea-list": [
-  { name: 'Black Coffee', price: 200, img: 'https://source.unsplash.com/200x200/?black-coffee' },
-  { name: 'Espresso', price: 250, img: 'https://source.unsplash.com/200x200/?espresso' },
-  { name: 'Cappuccino', price: 300, img: 'https://source.unsplash.com/200x200/?cappuccino' },
-  { name: 'Latte', price: 280, img: 'https://source.unsplash.com/200x200/?latte' },
-  { name: 'Green Tea', price: 180, img: 'https://source.unsplash.com/200x200/?green-tea' },
-  { name: 'Masala Chai', price: 150, img: 'https://source.unsplash.com/200x200/?masala-chai' },
-  { name: 'Lemon Tea', price: 160, img: 'https://source.unsplash.com/200x200/?lemon-tea' },
-  { name: 'Herbal Tea', price: 200, img: 'https://source.unsplash.com/200x200/?herbal-tea' },
-  { name: 'Iced Coffee', price: 220, img: 'https://source.unsplash.com/200x200/?iced-coffee' },
-  { name: 'Turmeric Latte', price: 260, img: 'https://source.unsplash.com/200x200/?turmeric-latte' },
-  { name: 'Cold Brew', price: 240, img: 'https://source.unsplash.com/200x200/?cold-brew' },
-  { name: 'Butter Tea', price: 230, img: 'https://source.unsplash.com/200x200/?butter-tea' }
+  { name: 'Black Coffee', price: 200, img: 'https://media.istockphoto.com/id/157528129/photo/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans.jpg?s=612x612&w=0&k=20&c=W_za-myO9QP_dimiJeZXsR4G2GHjrdo0RTyO3yVhopQ=' },
+  { name: 'Espresso', price: 250, img: 'https://media.istockphoto.com/id/1455924833/photo/fresh-double-espresso-coffee-and-coffee-beans-on-wooden-table.jpg?s=612x612&w=0&k=20&c=STuLBo05aQ5nHZxU2NnWAlaADSLCnZxzLIkED9sMEUM=' },
+  { name: 'Cappuccino', price: 300, img: 'https://thumbs.dreamstime.com/b/coffee-cappuccino-3979271.jpg' },
+  { name: 'Latte', price: 280, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKlBszDY2-tsXAeefqoqvq0vUaybmh2r0fg&s' },
+  { name: 'Green Tea', price: 180, img: 'https://media.istockphoto.com/id/628986454/photo/glass-cup-with-fresh-green-tea.jpg?s=612x612&w=0&k=20&c=XaspjM0PSAzw8rvNJA-C2BE95-xXbDzhwJRYodIh8Dc=' },
+  { name: 'Masala Chai', price: 150, img: 'https://media.istockphoto.com/id/614533094/photo/indian-masala-chai-tea.jpg?s=612x612&w=0&k=20&c=0P-npS30JIBX0FA9csLyB0WYtkEU7gWkNE7nSnvXlSE=' },
+  { name: 'Lemon Tea', price: 160, img: 'https://cdn.shopify.com/s/files/1/1146/8126/files/Lemon-Tea-Pictures_large.jpg?v=1503945632' },
+  { name: 'Herbal Tea', price: 200, img: 'https://www.treehugger.com/thmb/uWQw8MStw9Zetyqli_5F3qoS9Dc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tea-cup-with-several-dried-tea-leaves-and-flowers-1201496311-55f0a4dfdbc54605966a0a9ec2f40f3c.jpg' },
+  { name: 'Iced Coffee', price: 220, img: 'https://www.mybakingaddiction.com/wp-content/uploads/2023/10/brown-sugar-iced-shaken-espresso-hero.jpg' },
+  { name: 'Turmeric Latte', price: 260, img: 'https://images.getrecipekit.com/20240903060407-turmeric-20latte.jpeg?width=650&quality=90&' },
+  { name: 'Cold Brew', price: 240, img: 'https://www.eatingwell.com/thmb/ypZDdq0HS72jXHjFCAt5eXRtF7E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/How-to-Make-Cold-Brew-Coffee-b4af3ec355b642e78bb79e18991a0da0.jpg' },
+  { name: 'Butter Tea', price: 230, img: 'https://i.ytimg.com/vi/fzGjsxx9oRo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6ajsp8oHc7INrnIUXr3CmzaZ4Zw' }
 ]
 
 
