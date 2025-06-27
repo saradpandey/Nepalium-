@@ -2,7 +2,7 @@
 const swiper = new Swiper('.mySwiper', {
   loop: true,
   autoplay: {
-    delay: 3000, // Auto slide every 3 seconds
+    delay: 6000, // Auto slide every 6 seconds
     disableOnInteraction: false // Keeps autoplay running even after user interaction
   },
   pagination: {
