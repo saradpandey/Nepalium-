@@ -1,100 +1,275 @@
+  /* Top Header Styling */
+.top-header {
+  padding: 10px 60px;
+  background-color: #D9D9D9;
+}
 
-/* === Responsive Layout Adjustments === */
-@media (max-width: 1024px) {
-  .container {
-    padding: 0 20px;
-  }
+.top-header a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
 
-  header, footer, nav, section {
+.top-header .bi-telephone-fill {
+  font-size: 16px;
+  color: #000;
+}
+
+.social-media {
+  gap: 20px;
+}
+
+.social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-media a i {
+  font-size: 18px;
+  color: #333;
+}
+
+.social-media a:hover {
+  background-color: #007bff;
+}
+
+.social-media a:hover i {
+  color: #fff;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .top-header {
+    padding: 10px 20px;
     text-align: center;
   }
 
-  nav ul {
+  .top-header .row {
     flex-direction: column;
     gap: 10px;
   }
 
-  nav li {
-    margin: 10px 0;
+  .social-media {
+    justify-content: center;
+  }
+}
+
+    .navbar-custom {
+      background-color: #32C06F;
+      padding: 12px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: 500;
+    }
+
+    .navbar-brand img {
+      height: 90px;
+      max-height: 100px;
+      margin-top: -10px;
+      margin-bottom: -10px;
+      object-fit: contain;
+    }
+
+    .search-container {
+      width: 400px;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .cart-summary {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 8px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      color: #000;
+    }
+
+    .cart-summary h6,
+    .cart-summary p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 991.98px) {
+      .desktop-only {
+        display: none !important;
+      }
+
+      .mobile-extra {
+        display: block;
+        padding: 10px 20px;
+        background-color: #32C06F;
+      }
+
+      .mobile-extra input {
+        width: 100%;
+        padding: 8px 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .mobile-extra .cart-summary {
+        background: #fff;
+        color: #000;
+        margin-top: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .mobile-extra {
+        display: none;
+      }
+    }
+     @media(min-width: 768px) {
+    .footer-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+ @media(min-width: 768px) {
+    .feature-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+ /* Tablet View */
+@media (max-width: 768px) {
+  .welcome-Section {
+    padding: 40px 20px;
+  }
+
+  .welcome-title {
+    font-size: 1.6rem;
+    padding: 0 10px;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+  .welcome-title {
+    font-size: 1.3rem;
+  }
+
+  .welcome-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Devices (like 300px) */
+@media (max-width: 350px) {
+  .welcome-Section {
+    padding: 30px 10px;
+  }
+
+  .welcome-title {
+    font-size: 1.1rem;
+  }
+
+  .welcome-text {
+    font-size: 0.85rem;
   }
 }
 
 
-
-/* === Stack Buttons on Mobile === */
-@media (max-width: 600px) {
-  .product .btn,
-  .product .buy-now-btn {
-    width: 100%;
-    margin: 5px 0;
-  }
-}
-
- /* Responsive design */
- @media (max-width: 992px) {
+/* our  products   section  */
+@media (max-width: 992px) {
   .our-products-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
+  .our-products-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 15px 30px 15px;
+  }
+
+  .image-main-products {
+    height: 160px;
+  }
+
+  .product {
+    font-size: 24px;
+  }
+
+  .products-Name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
   .our-products-container {
     grid-template-columns: 1fr;
   }
+
+  .image-main-products {
+    height: 140px;
+  }
 }
-   @media (max-width: 1200px) {
-      .swiper-slide {
-        width: 45%;
-      }
-    }
 
-    @media (max-width: 768px) {
-      .swiper-slide {
-        width: 80%;
-      }
 
-      .swiper-slide .card-body {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
 
-   
-
-    /* swiper slider of the second slider*/
-    @media (max-width: 1200px) {
-      .swiper-slide {
-        width: 45%;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .swiper-slide {
-        width: 80%;
-      }
-
-      .swiper-slide .card-body {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 576px) {
-      .search-container{
-        width: ;
-      }
-      .swiper-slide {
-        width: 100%;
-      }
-    }
-     /* responsive tweaks */
-  @media (max-width: 1200px) {
-    .customSwiper .custom-slide { width: 45%; }
+/* Responsive for Mobile */
+@media screen and (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
   }
-  @media (max-width: 768px) {
-    .customSwiper .custom-slide { width: 80%; }
-    .customSwiper .card-body { opacity: 1; transform: translateY(0); }
+
+  .footer-columns-wrap {
+    flex-direction: column;
+    align-items: center;
   }
-  @media (max-width: 576px) {
-    .customSwiper .custom-slide { width: 100%; }
+
+  .footer-left,
+  .footer-right,
+  .footer-column {
+    width: 100%;
   }
+
+  .imags {
+    width: 60% !important;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-bottom-text,
+  .footer-bottom-link {
+    font-size: 0.75rem;
+  }
+
+  .imags {
+    width: 70% !important;
+  }
+  .footer-bottom-text{
+    padding-left: 30px;
+  }
+}

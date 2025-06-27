@@ -1,4 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <!-- Slider -->
+  <h2 class="our-products-categories">Our Popular Prducts</h2>
+  <div class="swiper customSwiper">
+    <div class="swiper-wrapper" id="custom-product-list"></div>
+  </div>
+  <script>
+    
   // Swiper init for hero slider
   const swiper = new Swiper('.mySwiper', {
     loop: true,
@@ -70,8 +84,7 @@
   breakpoints: {
     1200: { slidesPerView: 4 },
     768: { slidesPerView: 2 },
-    576: { slidesPerView: 1 },
-    320: { slidesPerView: 1 }
+    576: { slidesPerView: 1 }
   }
 });
 
@@ -211,3 +224,6 @@
 
   renderProducts();
   
+  </script>
+</body>
+</html>
