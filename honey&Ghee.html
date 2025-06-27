@@ -13,58 +13,92 @@
 
 <body>
   <!-- Top Header -->
-  <div class="top-header">
-    <div class="row px-3">
+<div class="top-header">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-between">
       <div class="col-auto">
         <a href="tel:9749781949"><i class="bi bi-telephone-fill"></i> 9749781949</a>
       </div>
-      <div class="col-auto social-media d-flex gap-3">
+      <div class="col-auto social-media d-flex">
         <a href="#"><i class="bi bi-facebook"></i></a>
         <a href="#"><i class="bi bi-youtube"></i></a>
         <a href="#"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Navbar Section -->
-  <nav class="navbar-custom navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">
-      <img src="logo.jpg" alt="Logo">
-    </a>
-    <!-- Search Bar -->
-    <div class="search-container">
-      <input type="text" id="searchBar" placeholder="Search products..." />
-      <div id="suggestions" class="suggestions-box"></div>
-    </div>
 
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <!-- Left: Logo -->
+      <a class="navbar-brand me-3" href="#">
+        <img src="logo.jpg" alt="Logo" />
+      </a>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <!-- Center: Search -->
+      <div class="search-container mx-auto d-none d-lg-block">
+        <input type="text" placeholder="Search products..." />
       </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
-        </ul>
+
+      <!-- Right: Nav + Cart -->
+      <div class="d-flex align-items-center">
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse desktop-only">
+          <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="signin.html">Sign In</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="Register.html">Register</a></li>
+          </ul>
+        </div>
+
+        <!-- Desktop Cart -->
+        <a href="Add to cart.html" class="text-decoration-none desktop-only">
+          <div class="cart-summary">
+            <h6>🛒 Cart (<span id="cart-count">0</span>)</h6>
+            <p>Total: Rs. <span id="cart-total">0</span></p>
+          </div>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler ms-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </div>
-
- <a href="Add to cart.html"> 
-    <div class="cart-summary sticky-cart text-dark bg-white">
-      <h6>🛒 Cart (<span id="cart-count">0</span>)</h6>
-      <p>Total: Rs. <span id="cart-total">0</span></p>
-    </div>
-    </a>
-    
   </nav>
+
+  <!-- Mobile Search + Cart (only shown in small screens) -->
+  <div class="mobile-extra">
+    <input type="text" placeholder="Search products..." />
+    <a href="Add to cart.html" class="text-decoration-none">
+      <div class="cart-summary">
+        <h6>🛒 Cart (<span id="cart-count">0</span>)</h6>
+        <p>Total: Rs. <span id="cart-total">0</span></p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+        <li class="nav-item"><a class="nav-link" href="Register.html">Register</a></li>
+      </ul>
+    </div>
+  </div>
   <h2 class="product">Our Products</h2>
   <div class="our-products-container">
     <div class="product-card"><a href="vegetables&fruits.html"><img class="image-main-products"
