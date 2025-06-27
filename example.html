@@ -1,301 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Products with Reviews & Cart</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-  />
+  <meta charset="UTF-8">
+  <title>Responsive Navbar Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS + Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
   <style>
-    /* Basic styling */
-    .star-rating {
-      color: gold;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+    /* === Responsive Navbar Custom Styling === */
+    .navbar-custom {
+      padding: 10px 20px;
+      background-color: #198754;
+      flex-wrap: wrap;
     }
-    .star-rating span {
-      margin-right: 2px;
+
+    .navbar-custom .navbar-brand img {
+      height: 40px;
     }
-    .custom-slide img {
+
+    .navbar-custom .navbar-brand {
+      margin-right: auto;
+    }
+
+    .navbar-toggler {
+      margin-left: auto;
+    }
+
+    .search-container {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
+      padding: 10px 20px;
+      order: 2;
     }
-    .product-card img {
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
+
+    .search-container input {
+      width: 100%;
+      max-width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-    .suggestions-container {
-      position: relative;
-      max-width: 400px;
-      margin-bottom: 20px;
+
+    .cart-summary {
+      width: 100%;
+      padding: 10px 20px;
+      order: 3;
+      text-align: center;
     }
+
     #suggestions {
       position: absolute;
       background: white;
-      border: 1px solid #ccc;
       width: 100%;
-      max-height: 200px;
-      overflow-y: auto;
-      z-index: 1000;
-      display: none;
+      border: 1px solid #ccc;
+      z-index: 99;
     }
-    .suggestion-item {
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-    .suggestion-item:hover {
-      background-color: #007bff;
-      color: white;
+
+    @media (min-width: 768px) {
+      .search-container,
+      .cart-summary {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <h2 class="mb-4">New Arrivals</h2>
-
-  <!-- Search -->
-  <div class="suggestions-container">
-    <input type="text" id="searchBar" class="form-control" placeholder="Search products..." autocomplete="off" />
-    <div id="suggestions" class="list-group"></div>
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="row px-3 py-2 bg-light">
+      <div class="col-auto">
+        <a href="tel:9749781949"><i class="bi bi-telephone-fill"></i> 9749781949</a>
+      </div>
+      <div class="col-auto social-media d-flex gap-3">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
   </div>
 
-  <!-- Custom Slider -->
-  <div class="swiper customSwiper mb-5">
-    <div class="swiper-wrapper" id="custom-product-list"></div>
+  <!-- Navbar Section -->
+  <nav class="navbar-custom navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Logo_Nepal.svg/768px-Logo_Nepal.svg.png" alt="Logo">
+    </a>
 
-    <!-- Slider navigation -->
-    <div class="custom-prev swiper-button-prev"></div>
-    <div class="custom-next swiper-button-next"></div>
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search products..." />
+      <div id="suggestions" class="suggestions-box"></div>
+    </div>
+
+    <!-- Cart Summary -->
+    <a href="Add to cart.html">
+      <div class="cart-summary bg-white text-dark rounded shadow-sm">
+        <h6>🛒 Cart (<span id="cart-count">0</span>)</h6>
+        <p>Total: Rs. <span id="cart-total">0</span></p>
+      </div>
+    </a>
+  </nav>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
   </div>
 
-  <!-- Vegetables & Fruits List -->
-  <div class="container">
-    <div class="row" id="vegetables-fruits-list"></div>
-  </div>
-
-  <!-- Cart Summary -->
-  <div class="mt-4">
-    <h5>Cart Summary:</h5>
-    <p>Items in cart: <span id="cart-count">0</span></p>
-    <p>Total price: Rs. <span id="cart-total">0</span></p>
-  </div>
-
-  <!-- Bootstrap & Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-  <script>
-    // --- Data ---
-// --- Full Product Data with reviews ---
-
-const customProducts = [
-  { name: 'Tomato', price: 40, img: 'https://www.almanac.com/sites/default/files/users/The%20Editors/tomatoes_ozgurdonmaz_gettyimages-edit_full_width.jpeg', reviews: 4 },
-  { name: 'Cucumber', price: 50, img: 'https://www.shutterstock.com/image-photo/organic-cucumbers-cultivation-closeup-fresh-600nw-2463149627.jpg', reviews: 5 },
-  { name: 'Carrot', price: 60, img: 'https://images.unsplash.com/photo-1633380110125-f6e685676160?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnJvdHxlbnwwfHwwfHx8MA%3D%3D', reviews: 3 },
-  { name: 'Potato', price: 30, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWt2bG1fRw0fFxQLM39GoCH0hkXfVO9uA2w&s', reviews: 4 },
-  { name: 'Apple', price: 120, img: 'https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2019%2F06%2F19132041%2FHow-the-apple-became-such-a-ubiquitous-iconic-fruit-across-the-globe-1400x850.jpg&w=1200&q=75', reviews: 4 },
-  { name: 'Banana', price: 80, img: 'https://thumbs.dreamstime.com/b/banana-bunch-hanging-palm-tree-ai-generative-design-background-instagram-facebook-wall-painting-art-backgrounds-wallpaper-325270238.jpg', reviews: 3 },
-  { name: 'Mango', price: 150, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2tmzH9WS5HbdC5j-sEBuEe5S6Nar9OEDwQ&s', reviews: 5 },
-  { name: 'Onion', price: 35, img: 'https://t3.ftcdn.net/jpg/09/54/54/88/360_F_954548899_M6D9TLhN9G1FkwUHEX78NAUp33LRImdf.jpg', reviews: 4 },
-  { name: 'Eggplant', price: 70, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJiWmeeYXAs4OPqkG-wOHBdURQhpP9Uw42Tg&s', reviews: 2 },
-  { name: 'Cauliflower', price: 90, img: 'https://www.epicgardening.com/wp-content/uploads/2023/09/Types-of-Cauliflower.jpg', reviews: 4 }
-];
-
-const products = {
-  "vegetables-fruits-list": [
-    { name: 'Tomato', price: 40, img: 'https://www.almanac.com/sites/default/files/users/The%20Editors/tomatoes_ozgurdonmaz_gettyimages-edit_full_width.jpeg', reviews: 4 },
-    { name: 'Carrot', price: 60, img: 'https://images.unsplash.com/photo-1633380110125-f6e685676160?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnJvdHxlbnwwfHwwfHx8MA%3D%3D', reviews: 3 },
-    { name: 'Potato', price: 30, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWt2bG1fRw0fFxQLM39GoCH0hkXfVO9uA2w&s', reviews: 4 },
-    { name: 'Apple', price: 120, img: 'https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2019%2F06%2F19132041%2FHow-the-apple-became-such-a-ubiquitous-iconic-fruit-across-the-globe-1400x850.jpg&w=1200&q=75', reviews: 4 },
-    { name: 'Banana', price: 80, img: 'https://thumbs.dreamstime.com/b/banana-bunch-hanging-palm-tree-ai-generative-design-background-instagram-facebook-wall-painting-art-backgrounds-wallpaper-325270238.jpg', reviews: 3 },
-    { name: 'Cucumber', price: 50, img: 'https://www.shutterstock.com/image-photo/organic-cucumbers-cultivation-closeup-fresh-600nw-2463149627.jpg', reviews: 5 },
-    { name: 'Mango', price: 150, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2tmzH9WS5HbdC5j-sEBuEe5S6Nar9OEDwQ&s', reviews: 5 },
-    { name: 'Orange', price: 100, img: 'https://t3.ftcdn.net/jpg/04/86/61/74/360_F_486617409_HfTkXKIMRNdayEqPKwSzUajDcpayW0mJ.jpg', reviews: 4 },
-    { name: 'Onion', price: 70, img: 'https://t3.ftcdn.net/jpg/09/54/54/88/360_F_954548899_M6D9TLhN9G1FkwUHEX78NAUp33LRImdf.jpg', reviews: 4 },
-    { name: 'Pineapple', price: 130, img: 'https://cdn.mos.cms.futurecdn.net/D2buHfHJAu9EmxPbEcmUT5.jpg', reviews: 5 },
-    { name: 'Spinach', price: 45, img: 'https://www.trustbasket.com/cdn/shop/articles/Spinach.webp?v=1686909241', reviews: 3 },
-    { name: 'Broccoli', price: 90, img: 'https://images.everydayhealth.com/images/diet-nutrition/all-about-broccoli-nutrition-facts-health-benefits-uses-and-more-722x406.jpg?w=508', reviews: 4 }
-  ]
-};
-
-// --- Render Custom Slider ---
-function renderCustomSlider(data = customProducts) {
-  const wrapper = document.getElementById('custom-product-list');
-  wrapper.innerHTML = '';
-
-  data.forEach(product => {
-    const slide = document.createElement('div');
-    slide.className = 'swiper-slide custom-slide';
-    slide.innerHTML = `
-      <img src="${product.img}" alt="${product.name}">
-      <div class="card-body">
-        <h5 class="card-title">${product.name}</h5>
-        <p class="card-text">Rs. ${product.price}</p>
-        <div class="star-rating">
-          ${'★'.repeat(product.reviews)}${'☆'.repeat(5 - product.reviews)}
-        </div>
-        <div class="button-container">
-          <button class="btn btn-primary addcart" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
-          <button class="btn btn-success" onclick="buyNow('${product.name}', ${product.price})">Buy Now</button>
-        </div>
-      </div>`;
-    wrapper.appendChild(slide);
-  });
-
-  new Swiper('.customSwiper', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false
-    },
-    navigation: {
-      prevEl: '.custom-prev',
-      nextEl: '.custom-next'
-    },
-    breakpoints: {
-      1200: { slidesPerView: 4 },
-      768: { slidesPerView: 2 },
-      576: { slidesPerView: 1 },
-      320: { slidesPerView: 1 }
-    }
-  });
-
-  setTimeout(() => {
-    document.querySelectorAll('.custom-slide').forEach(s => s.classList.add('show'));
-  }, 300);
-}
-
-// --- Buy Now Function ---
-function buyNow(name, price) {
-  alert(`Proceeding to checkout for ${name} - Rs. ${price}`);
-}
-
-// --- Cart state ---
-let cartCount = 0;
-let cartTotal = 0;
-
-function addToCart(name, price) {
-  cartCount++;
-  cartTotal += price;
-  document.getElementById('cart-count').textContent = cartCount;
-  document.getElementById('cart-total').textContent = cartTotal;
-  alert(`${name} added to cart!`);
-}
-
-// --- Render Vegetables & Fruits Products ---
-function renderProducts(highlight = "") {
-  let targetElement = null;
-
-  Object.keys(products).forEach(sectionId => {
-    const row = document.getElementById(sectionId);
-    row.innerHTML = '';
-
-    products[sectionId].forEach(product => {
-      const isHighlight = (product.name.toLowerCase() === highlight.toLowerCase());
-      const highlightClass = isHighlight ? 'border-success text-success' : '';
-
-      const col = document.createElement('div');
-      col.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
-      col.innerHTML = `
-        <div class="card product-card ${highlightClass}">
-          <img src="${product.img}" class="card-img-top" alt="${product.name}">
-          <div class="card-body text-center">
-            <h5 class="card-title ${highlightClass}">${product.name}</h5>
-            <p class="card-text ${highlightClass}">Rs. ${product.price}</p>
-            <div class="star-rating">
-              ${'★'.repeat(product.reviews)}${'☆'.repeat(5 - product.reviews)}
-            </div>
-            <button class="btn btn-primary mb-2 w-100 addcart" data-name="${product.name}" data-price="${product.price}">Add to Cart</button>
-            <button class="btn btn-success w-100" onclick="buyNow('${product.name}', ${product.price})">Buy Now</button>
-          </div>
-        </div>
-      `;
-      row.appendChild(col);
-
-      if (isHighlight && !targetElement) {
-        targetElement = row.parentElement.previousElementSibling;
-      }
-    });
-  });
-
-  if (targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-// --- Search & Suggestions ---
-const searchBar = document.getElementById('searchBar');
-const suggestionsBox = document.getElementById('suggestions');
-
-searchBar.addEventListener('input', function () {
-  const searchTerm = this.value.trim().toLowerCase();
-  suggestionsBox.innerHTML = '';
-
-  if (searchTerm === '') {
-    suggestionsBox.style.display = 'none';
-    renderProducts();
-    return;
-  }
-
-  const allProducts = Object.values(products).flat();
-  const seen = new Set();
-
-  const filteredProducts = allProducts.filter(product => {
-    const lowerName = product.name.toLowerCase();
-    if (lowerName.includes(searchTerm) && !seen.has(lowerName)) {
-      seen.add(lowerName);
-      return true;
-    }
-    return false;
-  });
-
-  if (filteredProducts.length === 0) {
-    suggestionsBox.style.display = 'none';
-    return;
-  }
-
-  filteredProducts.forEach(product => {
-    const div = document.createElement('div');
-    div.className = 'list-group-item suggestion-item';
-    div.textContent = product.name;
-    div.addEventListener('click', () => {
-      searchBar.value = product.name;
-      suggestionsBox.style.display = 'none';
-      renderProducts(product.name);
-    });
-    suggestionsBox.appendChild(div);
-  });
-
-  suggestionsBox.style.display = 'block';
-});
-
-// --- Initial Rendering ---
-document.addEventListener('DOMContentLoaded', () => {
-  renderCustomSlider();
-  renderProducts();
-});
-
-// --- Click listener for Add to Cart buttons in the whole document ---
-document.addEventListener('click', e => {
-  if (e.target.classList.contains('addcart')) {
-    const name = e.target.dataset.name;
-    const price = +e.target.dataset.price;
-    addToCart(name, price);
-  }
-});
-
-  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

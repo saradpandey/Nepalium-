@@ -2,7 +2,7 @@
 const swiper = new Swiper('.mySwiper', {
   loop: true,
   autoplay: {
-    delay: 6000, // Auto slide every 6 seconds
+    delay: 9000, // Auto slide every 3 seconds
     disableOnInteraction: false // Keeps autoplay running even after user interaction
   },
   pagination: {
@@ -93,7 +93,7 @@ renderCustomSlider();
 
 // Products for vegetables and fruits section with reviews added
 const products = {
-  "new-arrivals-list": [
+  "vegetables-fruits-list": [
     { name: 'Tomato', price: 40, img: 'https://www.almanac.com/sites/default/files/users/The%20Editors/tomatoes_ozgurdonmaz_gettyimages-edit_full_width.jpeg', reviews: 4 },
     { name: 'Carrot', price: 60, img: 'https://images.unsplash.com/photo-1633380110125-f6e685676160?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnJvdHxlbnwwfHwwfHx8MA%3D%3D', reviews: 3 },
     { name: 'Potato', price: 30, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWt2bG1fRw0fFxQLM39GoCH0hkXfVO9uA2w&s', reviews: 4 },

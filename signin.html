@@ -147,17 +147,21 @@
     const form = document.getElementById('loginForm');
 
     form.addEventListener('submit', function (e) {
-      e.preventDefault(); // Prevent form from submitting by default
+      e.preventDefault(); // Prevent form from submitting
 
       const email = document.getElementById('email').value.trim();
       const password = document.getElementById('password').value.trim();
 
-      if (email === '' || password === '') {
-        alert("Please enter both email and password.");
-      } else {
-        // ✅ Simulate login success and redirect to homepage
+      // ✅ Define correct credentials
+      const validEmail = "saradpandey2004@gmail.com";
+      const validPassword = "nepal123";
+
+      // ✅ Check credentials
+      if (email === validEmail && password === validPassword) {
         alert("Login successful!");
-        window.location.href = "index.html";
+        window.location.href = "index.html"; // Redirect to homepage
+      } else {
+        alert("❌ Invalid email or password.");
       }
     });
   </script>
