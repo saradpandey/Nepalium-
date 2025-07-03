@@ -12,7 +12,7 @@ const products = {
   { name: 'Village Ghee', price: 1100, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbm9LQ-WyppHgsl4bzoBcsXbJt6WB7IWlVw&s' },
   { name: 'Herbal Honey', price: 590, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5zLVEDwt-jqfXUWSIgzo-x6GHnq-bRTmcQ&s' },
   { name: 'A2 Desi Ghee', price: 1400, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqfelACnJbkSdLHBrJFiCbWgAGDF0SLwIcg&s' },
-  { name: 'Jamun Honey', price: 570, img: 'https://cdn.neosanjivani.com/wp-content/uploads/2022/06/4.jpg' }
+  { name: 'Goat Milk Ghee', price: 570, img: 'https://i.pinimg.com/736x/6e/4a/97/6e4a973b335a2d986854b88f0953560a.jpg' }
 ]
 
 };
