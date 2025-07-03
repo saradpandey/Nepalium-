@@ -13,7 +13,7 @@ const products = {
   { name: 'Iced Coffee', price: 220, img: 'https://www.mybakingaddiction.com/wp-content/uploads/2023/10/brown-sugar-iced-shaken-espresso-hero.jpg' },
   { name: 'Turmeric Latte', price: 260, img: 'https://images.getrecipekit.com/20240903060407-turmeric-20latte.jpeg?width=650&quality=90&' },
   { name: 'Cold Brew', price: 240, img: 'https://www.eatingwell.com/thmb/ypZDdq0HS72jXHjFCAt5eXRtF7E=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/How-to-Make-Cold-Brew-Coffee-b4af3ec355b642e78bb79e18991a0da0.jpg' },
-  { name: 'Butter Tea', price: 230, img: 'https://i.ytimg.com/vi/fzGjsxx9oRo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6ajsp8oHc7INrnIUXr3CmzaZ4Zw' }
+  { name: 'Oolong Tea', price: 230, img: 'https://i.pinimg.com/736x/41/e1/ae/41e1ae9b50f65d8eb6856990c26001b7.jpg' }
 ]
 
 
