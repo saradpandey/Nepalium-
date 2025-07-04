@@ -1,24 +1,22 @@
 
 const products = {
  "honey-ghee-list": [
-  { name: 'Mad honey', price: 500, img: 'https://m.media-amazon.com/images/I/61znwsdQYiS._SL1500_.jpg' },
-  { name: 'Clover honey', price: 1200, img: 'https://i.pinimg.com/736x/ff/62/23/ff6223f1540e11e08034218d6eed3125.jpg' },
-  { name: 'Rhododendron honey', price: 600, img: 'https://www.emporio1914.it/1337-large_default/rhododendron-honey-organic.jpg' },
-  { name: 'Buckwheat honey', price: 1300, img: 'https://i.pinimg.com/736x/ce/7c/2a/ce7c2a361fdebb107212dd38962489b4.jpg' },
-  { name: 'Neem Honey', price: 400, img: 'https://i.pinimg.com/736x/e8/8a/2a/e88a2a5780ca2a726052320f944194b9.jpg' },
-  { name: 'Sunflower honey', price: 550, img: 'https://i.pinimg.com/736x/32/4f/a7/324fa70b01a07d1427a029072b6b218f.jpg' },
-  { name: 'Yak Ghee', price: 580, img: 'https://www.nepal.ubuy.com/productimg/?image=aHR0cHM6Ly9pbWFnZXMtbmEuc3NsLWltYWdlcy1hbWF6b24uY29tL2ltYWdlcy9JLzYxWWZUSWM5eDZMLl9TUzQwMF8uanBn.jpg' },
-  { name: 'Cow Ghee', price: 620, img: 'https://i.pinimg.com/736x/1f/ff/6e/1fff6ef012b611032177b34742a5bcb8.jpg' },
-  { name: 'Buffalo Desi Ghee', price: 1100, img: 'https://i.pinimg.com/736x/fa/28/80/fa28808a5f9ba3d0da28e73ac2d37def.jpg' },
-  { name: 'Herbal Infused Ghee', price: 590, img: 'https://www.pureindianfoods.com/cdn/shop/files/ASHG-1.jpg?v=1710786216&width=300' },
-  { name: 'Desi Ghee', price: 1400, img: 'https://i.pinimg.com/736x/06/9d/e3/069de3677aae1469ea465457c3cb48ec.jpg' },
-  { name: 'Goat Milk Ghee', price: 570, img: 'https://i.pinimg.com/736x/ff/01/1a/ff011a75b12a7a16de26eba18a0d26fc.jpg' }
+  { name: 'Organic Honey', price: 500, img: 'https://media.istockphoto.com/id/842769074/photo/sweet-honeycomb-and-wooden-honey-dripping.jpg?s=612x612&w=0&k=20&c=GJwPKmbX02jYByrjIWLOf8xTHWqQEy3vN6cYajM6p7o=' },
+  { name: 'Pure Ghee', price: 1200, img: 'https://t3.ftcdn.net/jpg/05/12/58/16/360_F_512581633_H87urnh8Os5lgvC3lsXTZMDClzrCGNpM.jpg' },
+  { name: 'Wild Honey', price: 600, img: 'https://media.istockphoto.com/id/532400492/photo/exposed-beehive.jpg?s=612x612&w=0&k=20&c=GD-nPzRlmTzBBZWHU7R1DUQ48e86v4JBNslvHYyNX1w=' },
+  { name: 'Buff Ghee', price: 1300, img: 'https://5.imimg.com/data5/IOS/Default/2023/10/354592066/DE/BP/DZ/23509044/product-jpeg-500x500.png' },
+  { name: 'Mustard Honey', price: 400, img: 'https://static.wixstatic.com/media/302bc4_1161ffac7eb1470ea722a3e30393a14e~mv2.jpg/v1/fill/w_480,h_342,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/302bc4_1161ffac7eb1470ea722a3e30393a14e~mv2.jpg' },
+  { name: 'Flavored Honey', price: 550, img: 'https://source.unsplash.com/200x200/?flavored-honey' },
+  { name: 'Neem Honey', price: 580, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqYIJFth8eek5c4OGBEv8lnxZTsRaY2MqV_A&s' },
+  { name: 'Mountain Honey', price: 620, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6JAASWTCk-B-3uFEA8b2UjXCeyHfoCBwMw&s' },
+  { name: 'Village Ghee', price: 1100, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbm9LQ-WyppHgsl4bzoBcsXbJt6WB7IWlVw&s' },
+  { name: 'Herbal Honey', price: 590, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5zLVEDwt-jqfXUWSIgzo-x6GHnq-bRTmcQ&s' },
+  { name: 'A2 Desi Ghee', price: 1400, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqfelACnJbkSdLHBrJFiCbWgAGDF0SLwIcg&s' },
+  { name: 'Jamun Honey', price: 570, img: 'https://cdn.neosanjivani.com/wp-content/uploads/2022/06/4.jpg' }
 ]
 
 };
 
-let cartCount = 0;
-let cartTotal = 0;
 
 function renderProducts(highlight = "") {
   let targetElement = null;
@@ -46,7 +44,7 @@ function renderProducts(highlight = "") {
               <i class="bi bi-star"></i>
               <i class="bi bi-star"></i>
             </div>
-            <button class="btn btn-primary mb-2 w-100" onclick="addToCart(${product.price})">Add to Cart</button>
+            <button class="btn btn-primary mb-2 w-100" onclick="addToCart(${product.id})">Add to Cart</button>
             <button class="btn btn-success w-100">Buy Now</button>
           </div>
         </div>
@@ -64,13 +62,36 @@ function renderProducts(highlight = "") {
   }
 }
 
-function addToCart(price) {
-  cartCount++;
-  cartTotal += price;
-  document.getElementById('cart-count').textContent = cartCount;
-  document.getElementById('cart-total').textContent = cartTotal;
+function addToCart(productId) {
+  const allProducts = Object.values(products).flat();
+  const product = allProducts.find(p => p.id === productId);
+  if (!product) return;
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const existingItem = cart.find(item => item.id === productId);
+
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    cart.push({ ...product, quantity: 1 });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartSummary();
 }
 
+function updateCartSummary() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  document.querySelectorAll(".cart-count").forEach(el => el.textContent = totalCount);
+  document.querySelectorAll(".cart-total").forEach(el => el.textContent = totalPrice);
+}
+
+// Search Suggestion System
 const searchBar = document.getElementById('searchBar');
 const suggestionsBox = document.getElementById('suggestions');
 
@@ -109,4 +130,8 @@ searchBar.addEventListener('input', function () {
   suggestionsBox.style.display = 'block';
 });
 
-renderProducts();
+// Load products and cart count on page load
+window.addEventListener("load", () => {
+  renderProducts();
+  updateCartSummary();
+});
