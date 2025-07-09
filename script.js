@@ -17,16 +17,15 @@ const heroSwiper = new Swiper('.mySwiper', {
 
 // Product Data
 const customProducts = [
-  { name: 'Tomato', price: 40, img: 'https://www.almanac.com/sites/default/files/users/The%20Editors/tomatoes_ozgurdonmaz_gettyimages-edit_full_width.jpeg', reviews: 4 },
-  { name: 'Cucumber', price: 50, img: 'https://www.shutterstock.com/image-photo/organic-cucumbers-cultivation-closeup-fresh-600nw-2463149627.jpg', reviews: 5 },
-  { name: 'Carrot', price: 60, img: 'https://images.unsplash.com/photo-1633380110125-f6e685676160?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhcnJvdHxlbnwwfHwwfHx8MA%3D%3D', reviews: 3 },
-  { name: 'Potato', price: 30, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWt2bG1fRw0fFxQLM39GoCH0hkXfVO9uA2w&s', reviews: 4 },
-  { name: 'Apple', price: 120, img: 'https://www.earth.com/assets/_next/image/?url=https%3A%2F%2Fcff2.earth.com%2Fuploads%2F2019%2F06%2F19132041%2FHow-the-apple-became-such-a-ubiquitous-iconic-fruit-across-the-globe-1400x850.jpg&w=1200&q=75', reviews: 4 },
-  { name: 'Banana', price: 80, img: 'https://thumbs.dreamstime.com/b/banana-bunch-hanging-palm-tree-ai-generative-design-background-instagram-facebook-wall-painting-art-backgrounds-wallpaper-325270238.jpg', reviews: 3 },
-  { name: 'Mango', price: 150, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2tmzH9WS5HbdC5j-sEBuEe5S6Nar9OEDwQ&s', reviews: 5 },
-  { name: 'Onion', price: 35, img: 'https://t3.ftcdn.net/jpg/09/54/54/88/360_F_954548899_M6D9TLhN9G1FkwUHEX78NAUp33LRImdf.jpg', reviews: 4 },
-  { name: 'Eggplant', price: 70, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJiWmeeYXAs4OPqkG-wOHBdURQhpP9Uw42Tg&s', reviews: 2 },
-  { name: 'Cauliflower', price: 90, img: 'https://www.epicgardening.com/wp-content/uploads/2023/09/Types-of-Cauliflower.jpg', reviews: 4 }
+{ name: 'Mountain Honey', price: 620, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6JAASWTCk-B-3uFEA8b2UjXCeyHfoCBwMw&s',reviews: 5 },
+  { name: 'Village Ghee', price: 1100, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmbm9LQ-WyppHgsl4bzoBcsXbJt6WB7IWlVw&s',reviews: 4  },
+  { name: 'Herbal Honey', price: 590, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ5zLVEDwt-jqfXUWSIgzo-x6GHnq-bRTmcQ&s' ,reviews: 3 },
+  { name: 'A2 Desi Ghee', price: 1400, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBqfelACnJbkSdLHBrJFiCbWgAGDF0SLwIcg&s' ,reviews: 4 },
+  { name: 'Jamun Honey', price: 570, img: 'https://cdn.neosanjivani.com/wp-content/uploads/2022/06/4.jpg',reviews: 5  },
+    { name: 'Grape Wine', price: 70, img: 'https://i.pinimg.com/736x/74/bd/c7/74bdc788f308509d5a5ad6c8716359b1.jpg',reviews: 4  },
+  { name: 'Marpha Wine', price: 550, img: 'https://mountainlodgesofnepal.com/wp-content/uploads/2021/09/ex-moksha-apple-brandy-and-moutain-goats-e1631347141780.jpg' ,reviews: 3},
+  { name: 'Hinwa Wine (हिन्वा वाइन)', price: 600, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfhGwQ73NIwl3CxDf3sMe52_dZTDHXfL7ZOA&s',reviews: 5  },
+  { name: 'Yak Wine', price: 650, img: 'https://static.wixstatic.com/media/e37483_7f88546f91ce4c8cb657101b8b2a7454~mv2.jpg/v1/crop/x_0,y_91,w_1536,h_1866/fill/w_320,h_293,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/450944325_2922121384596933_2603597181769939396_n_edited.jpg' ,reviews: 5 }
 ];
 
 // Swiper instance variable for custom slider
@@ -131,10 +130,10 @@ const products = {
   { name: 'Koirala ko phool(Mountain Ebony)', price: 50, img: 'https://i.pinimg.com/736x/08/76/e8/0876e871a4ee0b569afaa83bbdc69076.jpg' },
   { name: 'Gundruk', price: 150, img: 'https://i.pinimg.com/736x/b0/98/86/b09886fd2d6ea5edfccff712b7edefae.jpg' },
   { name: 'Yam', price: 100, img: 'https://i.pinimg.com/736x/52/a5/a3/52a5a37cc71b0ffe9ab95a4969209459.jpg' },
-  { name: 'Pumpkin Shoots', price: 70, img: 'https://i.pinimg.com/736x/56/bd/51/56bd514ef96842a9bd9972f3e8c1fb02.jpg' },
+  { name: 'Dried Tomato', price: 70, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5pZ7J9fs2pTAxYvAZo7X7qVDDmYtWmcL4w&s' },
   { name: 'Chayote(Iskus)', price: 130, img: 'https://i.pinimg.com/736x/20/79/31/2079314e5274689e49047372729af47d.jpg' },
-  { name: 'Bamboo shoots(Tama)', price: 45, img: 'https://i.pinimg.com/736x/95/cc/cb/95cccb28b24d4ecd40abfe0ef6b91ec1.jpg' },
-  { name: 'Wild Mushroom ', price: 90, img: 'https://i.pinimg.com/736x/e7/de/e9/e7dee9b9e28febab3cb2ae0d2388d271.jpg' }
+  { name: 'Dried Bamboo Shoot (Tama)', price: 45, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsxYkdgS2fMPsgJyTW5kGyIsTIMySt1ztIw&s' },
+  { name: ' Dried Wild Mushroom ', price: 90, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9iWNtHMdH-_XSAfjjcBTpndfg0vO7JHjRA&s' }
 ]
 
  

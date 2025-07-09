@@ -9,10 +9,10 @@ const products = {
   { name: 'Koirala ko phool(Mountain Ebony)', price: 50, img: 'https://i.pinimg.com/736x/08/76/e8/0876e871a4ee0b569afaa83bbdc69076.jpg' },
   { name: 'Gundruk', price: 150, img: 'https://i.pinimg.com/736x/b0/98/86/b09886fd2d6ea5edfccff712b7edefae.jpg' },
   { name: 'Yam', price: 100, img: 'https://i.pinimg.com/736x/52/a5/a3/52a5a37cc71b0ffe9ab95a4969209459.jpg' },
-  { name: 'Pumpkin Shoots', price: 70, img: 'https://i.pinimg.com/736x/56/bd/51/56bd514ef96842a9bd9972f3e8c1fb02.jpg' },
+  { name: 'Dried Tomato', price: 70, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5pZ7J9fs2pTAxYvAZo7X7qVDDmYtWmcL4w&s' },
   { name: 'Chayote(Iskus)', price: 130, img: 'https://i.pinimg.com/736x/20/79/31/2079314e5274689e49047372729af47d.jpg' },
-  { name: 'Bamboo shoots(Tama)', price: 45, img: 'https://i.pinimg.com/736x/95/cc/cb/95cccb28b24d4ecd40abfe0ef6b91ec1.jpg' },
-  { name: 'Wild Mushroom ', price: 90, img: 'https://i.pinimg.com/736x/e7/de/e9/e7dee9b9e28febab3cb2ae0d2388d271.jpg' }
+  { name: 'Dried Bamboo Shoot (Tama)', price: 45, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzsxYkdgS2fMPsgJyTW5kGyIsTIMySt1ztIw&s' },
+  { name: ' Dried Wild Mushroom ', price: 90, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9iWNtHMdH-_XSAfjjcBTpndfg0vO7JHjRA&s' }
 ]
 
  

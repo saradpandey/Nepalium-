@@ -9,9 +9,9 @@ const products = {
   { name: 'Junar Juice', price: 140, img: 'https://i.pinimg.com/736x/e5/21/f6/e521f6d4f27b55146b84e2bbf5148b5c.jpg' },
   { name: 'Sugarcane Sugar Tea', price: 130, img: 'https://i.pinimg.com/736x/f0/c9/e6/f0c9e6a15fc597a49251643751ee7a70.jpg' },
   { name: 'Grape Wine', price: 70, img: 'https://i.pinimg.com/736x/74/bd/c7/74bdc788f308509d5a5ad6c8716359b1.jpg' },
-  { name: 'Vodka', price: 550, img: 'https://cdn11.bigcommerce.com/s-tgrcca6nho/images/stencil/1280x1280/products/22162/46259/8848-vodka__82679.1749291995.jpg?c=1' },
-  { name: 'Soft Drinks', price: 600, img: 'https://i.pinimg.com/736x/7a/1c/cd/7a1ccd6b55961ad7fc80efbc627074e5.jpg' },
-  { name: 'Beer', price: 650, img: 'https://nutsaboutwine.ie/wp-content/uploads/2020/11/tuborg.jpg' }
+  { name: 'Marpha Wine', price: 550, img: 'https://mountainlodgesofnepal.com/wp-content/uploads/2021/09/ex-moksha-apple-brandy-and-moutain-goats-e1631347141780.jpg' },
+  { name: 'Hinwa Wine (हिन्वा वाइन)', price: 600, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfhGwQ73NIwl3CxDf3sMe52_dZTDHXfL7ZOA&s' },
+  { name: 'Yak Wine', price: 650, img: 'https://static.wixstatic.com/media/e37483_7f88546f91ce4c8cb657101b8b2a7454~mv2.jpg/v1/crop/x_0,y_91,w_1536,h_1866/fill/w_320,h_293,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/450944325_2922121384596933_2603597181769939396_n_edited.jpg' }
 ]
 };
 
