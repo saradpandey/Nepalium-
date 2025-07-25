@@ -73,8 +73,9 @@ function renderCustomSlider(data = customProducts) {
     breakpoints: {
       1200: { slidesPerView: 4 },
       768: { slidesPerView: 2 },
-      576: { slidesPerView: 1 },
-      320: { slidesPerView: 1 }
+      576: { slidesPerView: 2 },
+      375: { slidesPerView: 1 },
+       320: { slidesPerView: 1 }
     }
   });
 
